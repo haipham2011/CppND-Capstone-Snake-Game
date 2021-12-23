@@ -45,3 +45,24 @@ This work is licensed under a
 [cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
 [cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
+
+## Rubic points
+
+1. The project demonstrates an understanding of C++ functions and control structures.
+  * obstacle.cpp: line 23 - 30
+  * game.cpp: line 77 - 81
+  * renderer.cpp: line 48 - 53, line 65 - 69, line 96 - 99
+2. The project uses Object Oriented Programming techniques.
+  * Check new classes created: food.cpp, obstacle.cpp, color.cpp
+3. Classes use appropriate access specifiers for class members.
+  * food.h: line 13 - 24
+  * obstacle.h: line 19 - 26
+  * color.h: line 10 - 22
+4. Class constructors utilize member initialization lists.
+  * food.cpp: line 8
+  * obstacle.cpp: line 18
+  * color.cpp: line 8
+5. Classes encapsulate behavior.
+  * food.cpp: line 13 - 35
+  * color.cpp: line 10 - 24
+  * obstacle.cpp: line 23 - 31
