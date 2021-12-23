@@ -2,10 +2,11 @@
 #define GAME_H
 
 #include <random>
+#include <food/food.h>
 #include "SDL.h"
-#include "controller.h"
-#include "renderer.h"
-#include "snake.h"
+#include "controller/controller.h"
+#include "renderer/renderer.h"
+#include "snake/snake.h"
 
 class Game {
  public:
@@ -17,7 +18,8 @@ class Game {
 
  private:
   Snake snake;
-  SDL_Point food;
+  Food food = Food(0, 0);
+  std::vector<SDL_Point> obstacles;
 
   std::random_device dev;
   std::mt19937 engine;
@@ -27,6 +29,7 @@ class Game {
   int score{0};
 
   void PlaceFood();
+  void PlaceObstacles();
   void Update();
 };
 
